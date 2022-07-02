@@ -68,12 +68,6 @@ function draw() {
       fill(255/2);
       rect(0, 0, width, height);
 
-      //new_canvas();
-
-
-      // canvasの大きさを画像の大きさに変更
-      //resizeCanvas(img.width, img.height);
-
       // スライダーの入力値に応じてパーティクルの大きさを決める
       let size = pixel_slider.value();
 
@@ -207,20 +201,6 @@ function draw() {
         if (i % 5 == 0) {
           rect(random(width), random(height), diameterx, diametery);
         }
-
-        // random color
-        // colorMode(HSB, 255);
-        // blendMode(BLEND);
-        // let satu = saturation(col);
-        // fill(random(0, 100), satu);
-        // if (i % 5 == 0) {
-        //     rect(
-        //         location.x + random(-5, 5),
-        //         location.y + random(-5, 5),
-        //         diameter,
-        //         diameter
-        //     );
-        // }
       }
 
     }
@@ -248,9 +228,3 @@ function handleFile(file) {
 function save_file() {
     saveCanvas("myImage", "png");
 }
-
-// function new_canvas() {
-//       fill(255 / 2);
-//       rect(0, 0, width, height);
-//       resizeCanvas(img.width, img.height);
-// }
